@@ -11,8 +11,7 @@ npm install
 npm run dev
 ```
 
-실행결과 
-(./1.png)
+![실행결과](./1.png)
 
 브라우저에 표시되는 Local URL에 접속하세요. 빌드 테스트: `npm run build`.
 
