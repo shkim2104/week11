@@ -2,6 +2,7 @@
 export default function CourseItem({ course, onDelete, onToggle }) {
   return (
     <div className="course-row">
+      
       <div className="course-main">
         <input
           className="check"
@@ -16,10 +17,13 @@ export default function CourseItem({ course, onDelete, onToggle }) {
           </div>
           <div className="course-id">Course #{course.id}</div>
         </div>
+
       </div>
+
       <div className="category-cell">
         <span className="category">{course.category}</span>
       </div>
+      
       <div className="actions">
         <button
           className="btn danger"
@@ -29,6 +33,7 @@ export default function CourseItem({ course, onDelete, onToggle }) {
           Delete
         </button>
       </div>
+
     </div>
   );
 }
