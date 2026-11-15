@@ -3,7 +3,6 @@
 React + Vite 기반 학생 배포용 Sample Project입니다. **조회와 삭제는 완성**, 등록 및 완료 변경은 학생이 직접 구현하도록 `TODO`로 남겨두었습니다.
 
 ## 실행 방법
-
 Node.js 20.19+ 또는 22.12+ 권장.
 
 ```bash
@@ -11,10 +10,11 @@ npm install
 npm run dev
 ```
 
-![실행결과](./1.png)
-
 브라우저에 표시되는 Local URL에 접속하세요. 빌드 테스트: `npm run build`.
 
+
+실행결과
+![실행결과](./1.png)
 ## 소스 구조
 
 - `src/App.jsx`: 페이지 전체 레이아웃
@@ -42,3 +42,10 @@ npm run dev
 - 브라우저 새로고침 시 데이터가 초기화되는 이유는? (DB/localStorage 없음)
 
 > 교육 목적의 로컬 State 앱입니다. 서버 API 및 데이터베이스는 사용하지 않습니다.
+
+
+수정해야 할거 
+1. 초기 과목 5개 이상, 제목, CSS 3곳 이상 변경합니다.
+2. `CourseList.jsx`의 **TODO 1**: 과목 등록 (빈 값 입력 방지, 고유 id 지정, State 업데이트).
+   `CourseList.jsx`의 **TODO 2**: 완료 체크박스 클릭 시 `completed` 상태 변경.
+3. 
