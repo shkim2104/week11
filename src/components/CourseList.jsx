@@ -17,8 +17,20 @@ export default function CourseList() {
   function handleAdd(event) {
     event.preventDefault();
 
-    
-    // TODO: 빈 입력 검사, 새 과목 객체 생성, setCourses 호출, 입력창 초기화
+    if(!newName.trim()) {
+      alert('과목명을 입력하세요.');
+      return;
+    }
+    setCourses(previous => {
+      const newCourse = {
+        id: previous.length > 0 ? Math.max(...previous.map(course => course.id)) + 1 : 1,
+        name: newName.trim(),
+        category: '선택', 
+        completed: false
+      };
+      return [...previous, newCourse];
+    });
+    setNewName('');
   }
 
   // TODO 2 (필수): 완료 상태 변경 기능을 구현하세요.
@@ -50,4 +62,4 @@ export default function CourseList() {
       </section>
     </>
   );
-}
+}  
